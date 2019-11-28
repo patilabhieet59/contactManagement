@@ -18,7 +18,7 @@ public class Contact {
     private String email;
     @Column(name = "phone_number")
     private String phoneNumber;
-    @Transient
+    @Column(name = "active")
     private Boolean active;
 
     public Long getId() {
