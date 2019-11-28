@@ -26,6 +26,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(ContactController.class)
@@ -111,7 +112,9 @@ class ContactManagementApplicationTests {
         c1.setEmail("james.bond@abc.com");
         c1.setActive(true);
 
+
         Mockito.when(repository.save(Mockito.any())).thenReturn(c1);
+        Mockito.when(repository.findById(Mockito.any())).thenReturn(Optional.of(c1));
         mockMvc.perform(MockMvcRequestBuilders.delete("/deleteContact/{id}",1L)
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isMovedPermanently());
