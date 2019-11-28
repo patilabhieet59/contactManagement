@@ -43,7 +43,7 @@ public class ContactController {
     @DeleteMapping("/deleteContact/{contactid}")
     @ResponseStatus(HttpStatus.MOVED_PERMANENTLY)
     public void deleteContact(@PathVariable("contactid") Long id){
-        System.out.println("----------------  "+id);
+
         Optional<Contact> contact1 = repository.findById(id);
         if(contact1.isPresent()){
             contact1.get().setActive(false);

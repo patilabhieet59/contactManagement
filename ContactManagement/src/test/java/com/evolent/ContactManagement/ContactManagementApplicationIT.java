@@ -39,7 +39,6 @@ public class ContactManagementApplicationIT {
     public void testGetContacts() throws Exception {
 
         Contact c1 = new Contact();
-//        c1.setId(1L);
         c1.setFirstName("Lokesh");
         c1.setLastName("Gupta");
         c1.setEmail("james.bond@abc.com");
@@ -72,7 +71,6 @@ public class ContactManagementApplicationIT {
     public void testDeleteContacts() throws Exception {
 
         Contact c1 = new Contact();
-//        c1.setId(1L);
         c1.setFirstName("Lokesh");
         c1.setLastName("Gupta");
         c1.setEmail("james.bond@abc.com");
