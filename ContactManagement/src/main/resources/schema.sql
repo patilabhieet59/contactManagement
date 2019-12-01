@@ -6,5 +6,5 @@ CREATE TABLE CONTACTS (
   last_name VARCHAR(250) NOT NULL,
   email VARCHAR(250) DEFAULT NULL,
   phone_number VARCHAR(100) DEFAULT NULL,
-  active CHAR(1) DEFAULT 'T'';
+  active CHAR(1) DEFAULT 'T';
 );
