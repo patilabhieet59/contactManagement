@@ -9,20 +9,20 @@ Contact Management project
   - Maven
 
 ## API:
-  1)List Contacts: GET request to pull all contacts
+  1. **List Contacts:** GET request to pull all contacts
    ```
     http://<host>:8080/getContacts
   ```
-  2)Add a contact: POST request to add contact
+  2. **Add a contact:** POST request to add contact
   Sample json input:{"id":1,"firstName":"Abhijeet","lastName":"Patil","email":"abc@gmail.com","phoneNumber":"12345","active":true}
   ```
     http://<host>:8080/addContact
   ```  
-  3)Edit contact: PUT request to edit existing contact
+  3. **Edit contact:** PUT request to edit existing contact
   ```
     http://<host>:8080/updateContact
   ```
-  4)Delete contact:DELETE request to delete/inactivate contact
+  4. **Delete contact:** DELETE request to delete/inactivate contact
   ```
     http://<host>:8080/deleteContact/{contactid}
   ```
