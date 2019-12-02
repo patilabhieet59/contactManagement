@@ -14,7 +14,7 @@ Contact Management project
     http://<host>:8080/getContacts
   ```
   2)Add a contact: POST request to add contact
-  Sample json input:{"id":1,"firstName":"Lokesh","lastName":"Gupta","email":"abc@gmail.com","phoneNumber":"12345","active":true}
+  Sample json input:{"id":1,"firstName":"Abhijeet","lastName":"Patil","email":"abc@gmail.com","phoneNumber":"12345","active":true}
   ```
     http://<host>:8080/addContact
   ```  
